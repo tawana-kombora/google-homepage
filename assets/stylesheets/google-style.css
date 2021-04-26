@@ -1,0 +1,74 @@
+/*
+============================
+CSS Reset
+============================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+===========================
+Body
+===========================
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #222;
+  background: #fff;
+}
+
+/*
+===========================
+Links/Navigation
+===========================
+*/
+
+.top-links {
+  flex-direction: row;
+}
+
+.top-links {
+  display: flex;
+}
+
+.link1, .link2, .link3, .link4 {
+  flex: 1;
+}
+
+.link1, .link2, .link3, .link4 {
+  padding: 0 24px 0 24px;
+}
+
+.link1 {
+  margin-left: 75%;
+}
+
+/*
+===========================
+Search Area
+===========================
+*/
+
+.search-bar {
+  margin: 0 auto;
+  width: 530px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/*
+===========================
+Images
+===========================
+*/
+
+.prfl-img, .svg-square {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
