@@ -149,6 +149,7 @@ Search Area
 .search-img {
   position: relative;
   left: 60px;
+  top: 1px;
   filter: contrast(0);
 }
 
