@@ -21,19 +21,22 @@ Universal Selector
 ===================
 */
 
+#page {
+  font-size: 14px;
+  background: #fff;
+  min-width: 400px; 
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
-  color: #222;
 }
 
 * a {
   text-decoration: none;
 }
 
-#page {
-  font-size: 14px;
-  background: #fff;
-  min-width: 400px; 
+body a {
+  color: #222;
 }
 
 /*
@@ -43,7 +46,7 @@ Header/Navigation
 */
 
 .nav {
-  padding: 6px;
+  padding: 5px;
   min-width: auto;
 }
 
@@ -54,16 +57,54 @@ Header/Navigation
   justify-content: flex-end;
 }
 
+.txt {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.li1:hover,
+.li2:hover {
+  text-decoration: underline;
+}
+
+.l-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3px;
+}
+
 .li1, .li2, .li3, .li4 {
   margin: 0 8px;
 }
 
+.li4 {
+  margin-left: 0;
+}
+
 .prfl-img, .svg-sqre {
-  height: 30px;
-  max-width: 30px;
+  padding: 6px;
+}
+
+.svg-sqre {
+  width: 37px;
+  height: 37px;
 }
 
 .prfl-img {
+  width: 43px;
+  height: 43px;
+}
+
+.li4 img {
+  border-radius: 50%;
+}
+
+.svg-sqre:hover,
+.prfl-img:hover {
+  background-color: rgba(60,64,67,0.05);
   border-radius: 50%;
 }
 
@@ -78,13 +119,13 @@ Search Area
   margin: 0 auto;
 }
 
-.empty {
-  height: 201px;
-}
-
 .google-logo {
   width: 375px;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-img, .img-logo {
@@ -96,10 +137,12 @@ Search Area
 }
 
 .search-bar {
-  width: 562.5px;
+  width: auto;
+  max-width: 584px;
   margin: 0 auto;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
 #search {
@@ -108,8 +151,8 @@ Search Area
   margin: 0 auto;
 
   width: 50vw;
-  max-width: 500px;
-  height: 40px;
+  max-width: 100%;
+  height: 44px;
 
   border: 1px solid #e1e1e1;
   border-radius: 50px;
@@ -117,29 +160,46 @@ Search Area
 
   font-size: initial;
   margin: 20px;
+  outline: none;
+}
+
+#search:hover {
+  background-color: rgba(223,225,229,0);
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border: 1px solid #dadce0;
 }
 
 .buttons {
   max-width: 375px;
-  margin: 25px auto;
+  margin: 5px auto;
   display: flex;
 }
 
 .btn {
+  display: inline-block;
   padding: 10px;
-  margin: 11px auto;
-  border-radius: 5px;
-  background: #eee;
+  margin: auto 5px;
+  border-radius: 4px;
+  border: 1px solid #f8f9fa;
+  background: #f8f9fa;
+}
+
+.btn:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+  border: 1px solid #dadce0;
+}
+
+.buttons .g-search {
+  margin-left: auto;
+}
+
+.buttons .lucky {
+  margin-right: auto;
 }
 
 .buttons button {
   cursor: pointer;
 }
-
-hr {
-  
-}
-
 
 /*
 ===================
@@ -148,20 +208,27 @@ Footer
 */
 
 #footer {
-  background-color: rgba(161, 161, 161, 0.178);
-  color:rgba(34, 34, 34, 0.404);
+  color: rgb(82, 82, 82);
   position: fixed;
   bottom: 0;
   min-width: 100%;
 }
 
+#footer a {
+  color: rgb(83, 83, 83);
+}
+
 .p, .f-container {
+  background-color: rgba(161, 161, 161, 0.178);
   padding: 15px 30px;
+}
+
+.p {
+  border-bottom: 2px solid rgba(161, 161, 161, 0.178);
 }
 
 .f-container {
   display: flex;
-  color: rgba(34, 34, 34, 0.404);
 }
 
 .info, .settings {
