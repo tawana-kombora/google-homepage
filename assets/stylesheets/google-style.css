@@ -5,6 +5,7 @@ CSS Reset
 */
 
 html {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-height: 100%;
 }
@@ -81,7 +82,7 @@ Header/Navigation
 }
 
 .li4 {
-  margin-left: 0;
+  margin-left: 4px;
 }
 
 .prfl-img, .svg-sqre {
@@ -143,6 +144,12 @@ Search Area
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.search-img {
+  position: relative;
+  left: 60px;
+  filter: contrast(0);
 }
 
 #search {
