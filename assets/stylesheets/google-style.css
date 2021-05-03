@@ -241,7 +241,23 @@ Footer
   justify-content: flex-end;
 }
 
-.privacy, .terms, .set, .about, .advert, .business, .hsw {
+.privacy, 
+.terms, 
+.set, 
+.about, 
+.advert, 
+.business, 
+.hsw {
   margin: 0;
   padding-right: 15px;
+}
+ 
+.privacy:hover, 
+.terms:hover, 
+.set:hover, 
+.about:hover, 
+.advert:hover, 
+.business:hover, 
+.hsw:hover {
+  text-decoration: underline;
 }
