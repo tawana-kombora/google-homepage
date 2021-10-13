@@ -1,0 +1,22 @@
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header, 
+.content, 
+.footer {
+  border: 1px solid #f00;
+}
